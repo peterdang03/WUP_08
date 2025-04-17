@@ -42,3 +42,17 @@ According to the observations, the residual standard error is 67.81, and our adj
 
 NECK RSE is 43.91  
 HEADLEN RSE is 67.81  
+
+```{r}
+mHEADWTH <- lm(WEIGHT~HEADWTH,data=bears)
+plot(WEIGHT~HEADWTH,data=bears)
+abline(mHEADWTH)
+summary.lm(mHEADWTH)
+```
+
+We can see that for this plot, the residual standard error is 76.41 and the adjusted R squared is 0.6064. 
+
+Best to worst ordered by RSE    
+NECK RSE is 43.91     
+HEADLEN RSE is 67.81       
+HEADWTH RSE is 76.41   
